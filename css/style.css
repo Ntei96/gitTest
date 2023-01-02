@@ -1,5 +1,106 @@
-p {
-  color: white;
-  background-color: skyblue;
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'NanumSquare';
+}
+.wrap {
+  width: 100%;
+  height: 4000px;
+}
+.header {
+  width: 100%;
+  height: 780px;
+  background: url(../img/문주.png) ;
+  background-size: cover;
+  margin-bottom: 80px;
+}
+.nav {
+  width: 100%;
+  height: 90px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+}
+.nav .nav1 {
+  display: flex;
+}
+.nav .nav2 {
+  display: flex;
+}
+.nav li {
+  list-style: none;
+  color: rgb(5, 72, 92);
+  line-height: 90px;
+  margin: 0 35px 0 35px;
+  font-size: 18px;
+}
+.nav img {
+  margin-top: 10px;
+}
+.body {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 60px ;
+}
+.youtube {
   border: 1px solid black;
+  width: 900px;
+  height: 500px;
+}
+.notice {
+  width: 420px;
+  height: 500px;
+  border: 5px solid rgb(5, 72, 92);
+}
+.catalog {
+  margin-top: 100px;
+  width: 100%;
+  height: 1800px;
+  background: rgb(5, 72, 92);
+}
+.card1, .card2, .card3, .card4 {
+  width: 600px;
+  height: 700px;
+  margin: 94px;
+  background-color: white;
+  display: inline-block;
+}
+.pic1{
+  width: 600px;
+  height: 450px;
+  background: url(../img/검단.png);
+  background-size: cover;
+}
+.pic2{
+  width: 600px;
+  height: 450px;
+  background: url(../img/평택.png);
+  background-size: cover;
+}
+.pic3{
+  width: 600px;
+  height: 450px;
+  background: url(../img/위례.png);
+  background-size: cover;
+}
+.pic4{
+  width: 600px;
+  height: 450px;
+  background: url(../img/시흥.png);
+  background-size: cover;
+}
+.memo1, .memo2, .memo3 {
+  margin: 100px 0 0 95px;
+  width: 400px;
+  height: 550px;
+  border: 10px solid rgb(5, 72, 92);
+  padding: 0 20px;
+  display: inline-block;
+}
+.line {
+  width: 340px;
+  height: 100px;
+  border-bottom: 5px solid rgb(5, 72, 92);
 }
