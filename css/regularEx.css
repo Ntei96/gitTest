@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 500px;
+  margin: 100px auto;
+  background: url(/img/가입배경.png);
+}
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 305px;
+  height: 50px;
+  border-radius: 7px;
+  padding-left: 20px;
+  margin-right: 15px;
+}
+
+.input_confirm_btn {
+  width: 80px;
+  height: 50px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  background-color: rgb(5, 72, 92);
+  color: white;
+  border: none;
+  border: 1px solid blue;
+}
+.input_confirm_btn:active {
+  position: relative;
+  left: 2px;
+  top: 2px;
+}
+
+.id_input_box {
+  position: relative;
+}
+
+.id_input_check {
+  position: absolute;
+  top : 52px;
+  right: 200px;
+}
+.pw_input_box {
+  position: relative;
+}
+.pw_input_check {
+  position: absolute;
+  top: 52px;
+  right: 200px;
+}
+.email_input_box {
+  position: relative;
+}
+.email_input_check {
+  position: absolute;
+  top: 52px;
+  right: 200px;
+}
+.phone_input_box {
+  position: relative;
+}
+.phone_input_check {
+  position: absolute;
+  top: 52px;
+  right: 200px;
+}
+
+.reg_req_btn {
+  margin-top: 30px;
+  font-size: 1.2em;
+  width: 404px;
+  height: 50px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  background-color: darkgray;
+  color: white;
+  border: none;
+  border: 1px solid darkgray;
+}
+
+.reg_req_btn:active {
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+.page {
+  display: flex;
+}
+.signin, .home {
+  margin: 0 20px 0 80px;
+}
+a {
+  text-decoration: none;
+}
