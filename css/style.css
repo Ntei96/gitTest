@@ -25,6 +25,7 @@ a {
   background-color: white;
   display: flex;
   justify-content: space-around;
+  padding: 0 100px;
 }
 .nav .nav1 {
   display: flex;
@@ -41,6 +42,23 @@ a {
 }
 .nav img {
   margin-top: 10px;
+}
+#quest {
+  cursor: pointer;
+}
+.question {
+  width: 100%;
+  height: 50px;
+  background: white;
+  display: none;
+}
+.searchbox {
+  width: 77%;
+  height: 50px;
+  border: none;
+  margin-left: 180px; 
+  padding: 0 80px;
+  font-size: 15px;
 }
 .body {
   display: flex;
@@ -126,8 +144,37 @@ a {
 .news {
   width: 750px;
   height: 412px;
-  background: black;
+  border: 2px solid black;
   margin: 10px 0 0 90px;
+  position: relative;
+  overflow: hidden;
+}
+.newsbox {
+  width: 2250px;
+  height: 412px;
+  position: absolute;
+}
+.image1 {
+  width: 750px;
+  height: 412px;
+  background: url(../img/img_scrap01.jpg) no-repeat;
+  background-size: cover;
+}
+.image2 {
+  width: 750px;
+  height: 412px;
+  background: url(../img/img_scrap03.jpg) no-repeat;
+  background-size: cover;
+}
+.image3 {
+  width: 750px;
+  height: 412px;
+  background: url(../img/img_scrap04.jpg) no-repeat;
+  background-size: cover;
+}
+.news li {
+  list-style: none;
+  float: left;
 }
 .link {
   width: 35%;
