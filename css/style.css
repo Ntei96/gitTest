@@ -46,6 +46,14 @@ a {
 #quest {
   cursor: pointer;
 }
+.submenu {
+  display: flex;
+  width: 100%;
+  height: 237px;
+  background-color: whitesmoke;
+  display: none;
+}
+
 .question {
   width: 100%;
   height: 50px;
@@ -99,6 +107,24 @@ a {
   height: 450px;
   background: url(../img/검단.png);
   background-size: cover;
+}
+.large {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+.large i {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 150px;
+  position: absolute;
+  transform: translate(150%, 100%);
+}
+.large h2 {
+  text-align: center;
+  position: relative;
+  top: 400px;
+  color: white;
 }
 .pic2{
   width: 600px;
@@ -184,11 +210,12 @@ a {
   line-height: 65px;
   margin-left: 20px;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: 25%;
 }
-.naver, .kakao, .channel, .facebook{
+.naver, .kakao, .channel, .facebook, .twitter{
   display: flex;
-  margin: 50px 0 0 0; 
+  margin: 25px 0 0 0; 
+  transform: translateY(52%);
 }
 .desk {
   width: 100%;
