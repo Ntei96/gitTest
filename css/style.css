@@ -26,6 +26,9 @@ a {
   display: flex;
   justify-content: space-around;
   padding: 0 100px;
+  z-index: 1;
+  position: fixed;
+  top: 0;
 }
 .nav .nav1 {
   display: flex;
@@ -108,24 +111,6 @@ a {
   background: url(../img/검단.png);
   background-size: cover;
 }
-.large {
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.3);
-  display: none;
-}
-.large i {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 150px;
-  position: absolute;
-  transform: translate(150%, 100%);
-}
-.large h2 {
-  text-align: center;
-  position: relative;
-  top: 400px;
-  color: white;
-}
 .pic2{
   width: 600px;
   height: 450px;
@@ -144,6 +129,29 @@ a {
   background: url(../img/시흥.png);
   background-size: cover;
 }
+.large {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+}
+.large i {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 150px;
+  position: absolute;
+  transform: translate(150%, 100%);
+}
+.large h2 {
+  text-align: center;
+  position: relative;
+  top: 400px;
+  color: white;
+}
+.large:hover {
+  opacity: 100%;
+  transition: all 1s;
+}
+
 .memo {
   margin: 100px 0 100px 90px;
   width: 280px;
@@ -205,6 +213,7 @@ a {
 .link {
   width: 35%;
   float: right;
+  transform: translateY(-9px);
 }
 .link h2 {
   line-height: 65px;
@@ -254,4 +263,38 @@ a {
   background-color: rgb(92, 100, 103);
   top: 300px;
   position: relative;
+}
+.container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal {
+  position: relative;
+  background: #fff;
+  width: 850px;
+  height: 650px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.boxWrap {
+  width: 800px;
+  height: 750px;
+}
+.boxWrap img {
+  width: 100%;
+}
+.closeBtn {
+  position: absolute;
+  top:10px;
+  right: 20px;
+  cursor: pointer;
 }

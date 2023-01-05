@@ -32,8 +32,23 @@ $('.submenu').mouseover(function(){
 $('.submenu').mouseout(function(){
   $('.submenu').stop().slideUp();
 });
-//카드
-$('.pic1').mouseover(function () {
-  $('.large').eq(0).fadeIn(500);
-  // $('.large').eq(0).Attr('display', 'block');
+// 모달창 안보이게
+$('.container').hide()
+    
+// 모달창
+$('.large').eq(0).click(function () {
+    $('.container.img01').fadeIn(500);
+});
+$('.large').eq(1).click(function () {
+    $('.container.img02').fadeIn(500);
+});
+$('.large').eq(2).click(function () {
+    $('.container.img03').fadeIn(500);
+});
+$('.large').eq(3).click(function () {
+    $('.container.img04').fadeIn(500);
+});
+// 모달창 닫기
+$('.closeBtn').click(function(){
+  $('.container').fadeOut(500);  
 });
