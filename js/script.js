@@ -18,18 +18,30 @@ $("#quest").click(function(){
 });
 // 메뉴
 $('.nav1').mouseover(function(){
+  $('.subBg').stop().slideDown();
+});
+$('.nav1').mouseover(function(){
   $('.submenu').stop().slideDown();
+});
+$('.nav2').mouseover(function(){
+  $('.subBg').stop().slideDown();
 });
 $('.nav2').mouseover(function(){
   $('.submenu').stop().slideDown();
 });
 $('.question').mouseover(function(){
+  $('.subBg').stop().slideDown();
+});
+$('.question').mouseover(function(){
   $('.submenu').stop().slideDown();
 });
 $('.submenu').mouseover(function(){
-  $('.this').stop().slideDown();
+  $('.subBg').stop().slideDown();
 });
-$('.submenu').mouseout(function(){
+$('.subBg').mouseout(function(){
+  $('.subBg').stop().slideUp();
+});
+$('.subBg').mouseout(function(){
   $('.submenu').stop().slideUp();
 });
 // 모달창 안보이게
